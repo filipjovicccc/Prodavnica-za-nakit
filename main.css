@@ -1,0 +1,56 @@
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  #container div {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    font-size: 4em;
+  }
+
+ nav { font-size: 1.5em;
+         display: flex;
+        justify-content: space-between;
+         }
+
+ul, li {
+     display: inline;
+     margin: 0;
+     padding: 0;
+ }
+
+ .slika1 {
+     margin-top: 50px;
+    outline: rgba(0, 0, 0, 0.3) solid 8px;
+ }
+
+ .slika2 {
+    margin-top: 50px;
+    outline: rgba(0, 0, 0, 0.3) solid 8px;
+    display: flex;
+    justify-content: flex-end;
+ }
+ footer {
+    height: 170px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.89);
+    outline: rgba(37, 37, 37, 0.3) solid 6.5px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+ }
