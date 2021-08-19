@@ -4,7 +4,12 @@ const requestParsiranje = require("body-parser");
 
 const app = express();
 
+const productsRouter = require('./routes/products')
+
 app.use(requestParsiranje.urlencoded({ extended: true }));
+app.use(productsRouter);
+
+// app.use(productsRouter);
 
 
 app.get("/", requestParsiranje.urlencoded({ extended: true }), (req, res) => {
