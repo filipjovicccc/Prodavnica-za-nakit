@@ -128,9 +128,15 @@ ul, li {
    height: 390px;
  }
 
- #jewelry-two h5 {
-   margin-top: 130px;
+ #proizvodi-two {
+   margin-top: 50px;
  }
+
+
+ #proizvodi-two h5{
+   margin-top: 120px
+ }
+ 
 
  .proizvodi-dva {
   display: flex;
@@ -145,12 +151,13 @@ ul, li {
      height: 600px;
     overflow: hidden;
     
+    
      
      
  }
- .jewelry h5 {
+  .jewelry h5 {
      margin-top: 100px;
- }
+ } 
  
  #trns {
      position: relative;
@@ -171,62 +178,38 @@ ul, li {
     opacity:0;
   }
 
-  #more-products {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      position: relative;
-      font-weight: 700;
-      margin-bottom: 70px;
-     
-     
-
-
-  }
-
  
-
-  .small-headers h4 {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-weight: 600;
-
-  }
-  .small-headers h5 {
-
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-
-  }
-
-  .small-headers-two h4{
-    position: absolute;
-    top: 25%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-weight: 600;
-  }
-
-  .small-headers-two h5{
-    position: absolute;
-    top: 20%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    
-  }
-
+ .more-image {
+  display: flex;
  
-#more-products img {
+}
 
-    width: 40rem;
-    height: 25rem;
-    margin: 1rem;
-  }
+  .image{
+    position:relative;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.image:hover {
+  -webkit-transform: scale(0.9);
+
+}
+
+.image img{
+  width: 40rem;
+  height: 25rem;
+  margin: 2rem;
+}
+
+.image h4, .image h5{
+    position:absolute;
+    width:100%;
+    color:rgba(0, 0, 0, 0.89);
+    line-height:200px;
+    margin-left: 80px;
+}
+.image h5 {
+  top: 20px;
+} 
+
+
+
