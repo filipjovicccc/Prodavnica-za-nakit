@@ -1,7 +1,11 @@
-
+*{box-sizing: border-box;}
+h1 {text-align: center;
+margin-bottom: 30px;
+margin-top: 30px;}
   body {
     font-family: 'Rokkitt', serif;
     font-weight: 500;
+    box-sizing: border-box;
   }
   .stack {
     position: relative;
@@ -102,13 +106,14 @@ ul, li {
      justify-content: center;
      flex-direction: column;
      align-items: center;
-     margin-top: 20px;
-     margin-bottom: 20px;
+     margin-top: 30px;
+    
  }
 
  .proizvodi {
      display: flex;
      justify-content: center;
+     margin-top: 35px;
  }
 
  .proizvodi img {
@@ -181,6 +186,7 @@ ul, li {
  
  .more-image {
   display: flex;
+  justify-content: center;
  
 }
 
@@ -210,6 +216,93 @@ ul, li {
 .image h5 {
   top: 20px;
 } 
+
+
+@media (max-width: 768px) {
+
+  
+  nav {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+  }
+  section img {
+    width: 600px !important;
+    height: 300px !important;
+  }
+
+ 
+
+.proizvodi {
+  
+  margin-left: 15px;
+   flex-direction: row; 
+   flex-wrap: wrap;
+   justify-content: center; 
+   align-items: center; 
+  font-size: 0.7em;
+}
+
+.proizvodi h5 {
+   margin-top: 20px;
+}
+
+.proizvodi img {
+  height: 300px;
+  width: 200px;
+  justify-content: center;
+
+} 
+.more-image {
+  justify-content: center;
+ 
+}
+.image h5, h4 {
+  font-size: 0.7em;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.image img {
+  height: 300px;
+  width: 300px;
+}
+#proizvodi-two {
+  display: flex;
+  
+  
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 35px;
+  
+ 
+}
+.naslovi {
+  text-align: center;
+}
+.naslovi h4 {
+  margin-left: 16px;
+}
+
+ #proizvodi-two img {
+  width: 200px;
+  height: 300px;
+  margin-left: 0px;
+} 
+#proizvodi-two h5 {
+margin-top: 20px;
+}
+footer {
+  font-size: 0.5em;
+  margin-top: 30px;
+}
+
+}  
+
+
 
 
 

@@ -1,7 +1,12 @@
 body {
     font-family: 'Rokkitt', serif;
     font-weight: 500;
-    background-color: #4ea8de;
+    /* background-color: #4ea8de; */
+    background-image: url(imgs/plans-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
     
 }
 
@@ -34,7 +39,7 @@ form {
 }
 
 h1 {
-    margin-top: 50px;
+    margin-top: -15px;
     text-align: center;
     font-weight: 700;
 }
