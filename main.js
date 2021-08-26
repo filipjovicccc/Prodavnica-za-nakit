@@ -19,6 +19,10 @@ const productsDOM = document.querySelector
 
 let cart = [];   //glavni cart gde ce se ispisivati
 
+
+let btnsDOM = [];
+
+
 class Products {       //klasa preko koje cemo dobijati producte, //prvo preko jsona pa preko stranice
     async getProducts() {
         try {
@@ -68,13 +72,37 @@ class Detskop {            //klasa koja ce prikazivati na stranici
     getButtons() {
         const btns = document.querySelectorAll(".bag-btn");
 
+        buttonsDOM = btns;
+
 
 
         btns.forEach(button => {
             let id = button.dataset.id;
+            let inCart = cart.find(item => item.id === id);
+
+            if (inCart) {
+                button.innerText = "In Cart";
+                button.disable = true
+
+            }
+
+            button.addEventListener("click", (event) => {
+                event.target.innerText = "In Cart";
+
+                event.target.disabled = true;
+
+                let carItem = {
+                    ...Storage.getProduct(id),
+                    amount: 1
+                };
+
+                cart = [...carItem, cartItem];
+
+                Storage.saveCart(cart)
 
 
 
+            })
 
 
         });
@@ -86,6 +114,16 @@ class Storage {              //klasu kojom cemo da se bavimo sa local storigom
 
     static saveProducts(products) {
         localStorage.setItem("products", JSON.stringify(products))
+    }
+
+    static getProduct(id) {
+        let products = JSON.parse(localStorage.getItem
+            ('products'));
+        return products.find(product => product.id === id)
+    }
+
+    static saveCart() {
+        localStorage.setItem("cart", JSON.stringify(cart))
     }
 }
 
