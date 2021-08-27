@@ -1,0 +1,63 @@
+
+body {
+    
+    background-image: url(../images/plans-background.jpg);
+
+
+}
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.wrapper {
+   
+    margin-left: 50px;
+}
+h2 {
+    margin-left: 50px;
+}
+
+.form-group {
+   
+    margin-left: 50px;
+    }
+   
+input {
+    width: 100%;
+    border: solid 1px #eee;
+    padding: 15px 10px;
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    margin: 0 auto;
+    background: white;
+    margin-left:250px;
+    border: solid 2px black;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all .38s ease-in-out;
+    display: flex;
+    justify-content: center;
+
+}
+
+button:hover{
+ background: dodgerblue;
+ color: whitesmoke;
+
+}
+
+table tr td {
+
+    padding: 10px;
+    background-color:whitesmoke;
+    border: dodgerblue solid 1px;
+    
+}
+table {
+    margin-left: 50px;
+    margin-top: 20px;
+}

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&display=swap');
 
 :root {
-  --primaryColor: red;
+  --primaryColor: #4169E1;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -16,7 +16,12 @@
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: "Lato", sans-serif;
+  font-family: "Rokkitt, serif";
+}
+
+a {
+  text-decoration: none;
+  
 }
 
 .navbar {
@@ -41,7 +46,7 @@ body {
 .nav-icon {
   font-size: 1.5rem;
 }
-.cart-btn {
+.cart-button {
   position: relative;
   cursor: pointer;
 }
@@ -55,26 +60,26 @@ body {
   color: var(--mainWhite);
 }
 
-.hero {
+ .header-class {
   min-height: calc(100vh - 60px);
   background: url("./images/hero-bcg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.banner {
+} 
+.section {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
   padding: 2rem;
 }
-.banner-title {
+.section-title {
   font-size: 3.4rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
 }
-.banner-btn {
+.section-btn {
   padding: 1rem 3rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
@@ -113,6 +118,8 @@ body {
 .img-container {
   position: relative;
   overflow: hidden;
+  max-width: 230px;
+  max-height: 230px;
 }
 .bag-btn {
   position: absolute;
@@ -124,7 +131,7 @@ body {
   padding: 0.5rem 0.75rem;
   letter-spacing: var(--mainSpacing);
   font-weight: bold;
-  transition: var(--mainTransition);
+  transition: var(--mainTransition);   /*ovde je tranzicija za add to cart */
   transform: translateX(101%);
   cursor: pointer;
 }
@@ -190,7 +197,7 @@ body {
 .showCart {
   transform: translateX(0);
 }
-.transparentBcg {
+.transparentBg {
   visibility: visible;
 }
 @media screen and (min-width: 768px) {
@@ -238,9 +245,11 @@ body {
   color: grey;
   cursor: pointer;
 }
-.fa-chevron-up,
-.fa-chevron-down {
-  color: var(--primaryColor);
+
+
+.fa-sort-up,
+.fa-sort-down{
+  
   cursor: pointer;
 }
 
