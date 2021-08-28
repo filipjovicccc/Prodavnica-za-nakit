@@ -150,7 +150,7 @@ class Detskop {            //klasa koja ce prikazivati na stranici
             <i class="fas fa-sort-down" data-id=${item.id}></i>
         </div>`;
         cartContent.appendChild(div);
-        console.log(cartContent);
+
 
 
     };
@@ -317,3 +317,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 });
+

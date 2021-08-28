@@ -63,10 +63,33 @@ a {
  .header-class {
   min-height: calc(100vh - 60px);
   background: url("./images/hero-bcg.jpg") center/cover no-repeat;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 } 
+#tag {
+  float: left;
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  background-color: rgb(231, 226, 221);
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  display: none;
+  text-align: start;
+}
+
+#tag div {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
 .section {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);

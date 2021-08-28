@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 .stack {
     /* position: relative; */
     width: 50%;
@@ -32,3 +38,11 @@
     border-radius: 5px;
     opacity: 0.9;
   }
+
+ #spec-button {
+   padding: 10px;
+ }
+ 
+
+
+
