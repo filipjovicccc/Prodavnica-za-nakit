@@ -13,5 +13,21 @@ tagButton.onclick = function () {
     }
 }
 
+var myTagTwo = document.getElementById("tag2");
+
+var tagButton = document.getElementById("spec-buttonTwo");
+
+tagButton.onmouseover = function () {
+
+    if (myTagTwo.style.display !== "none") {
+
+        myTagTwo.style.display = "none";
+    } else {
+        myTagTwo.style.display = "block"
+    }
+}
+
+
+
 
 

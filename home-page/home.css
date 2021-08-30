@@ -2,10 +2,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: sans-serif;
+
 }
 .stack {
-    /* position: relative; */
     width: 50%;
     max-width: 600px;
     -webkit-transition: all .2s ease-in-out;
@@ -39,8 +38,16 @@
     opacity: 0.9;
   }
 
- #spec-button {
-   padding: 10px;
+ #spec-button  {
+  border: none;
+ }
+
+ #spec-buttonTwo {
+  border: none;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: rgb(231, 226, 221);
  }
  
 

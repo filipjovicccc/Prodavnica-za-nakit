@@ -59,14 +59,16 @@ class Detskop {            //klasa koja ce prikazivati na stranici
                 <img src=${product.image
                 } alt="product" class="product-img">
                 <button class="bag-btn" data-id="${product.id}">
-                <i class="fas fa-shopping-cart"></i>
-                add to cart
-    
-            </button>
+            <i class="fas fa-shopping-cart"></i>
+            add to cart </button>
+          
              
             </div>
             <h3>${product.title}</h3>    
             <h4>${product.price}</h4> 
+            
+
+        
            
         </article>
 
@@ -317,4 +319,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 });
+
 

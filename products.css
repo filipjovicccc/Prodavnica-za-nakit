@@ -1,9 +1,10 @@
 body {
-    background-image: url(images/nakit4.jpg);
-    /* background-color: #F0FFFF; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
+    /* background-image: url(images/nakit4.jpg);
+    background-color: #F0FFFF;
+     background-repeat: no-repeat;
+    background-size: cover;  */
+    background-color: #ffd6ba;
+    
 
 }
 
@@ -27,3 +28,21 @@ nav {
 .cart-button {
     margin-left: 100px;
 }
+
+/* .demo-wrap {
+    overflow: hidden;
+    position: relative;
+  } */
+
+  .demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .demo-content {
+    position: relative;
+  }
