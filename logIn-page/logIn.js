@@ -1,4 +1,5 @@
-
+// let test = 'import has worked';
+// export { test }
 
 
 const signUp = e => {
@@ -10,9 +11,11 @@ const signUp = e => {
         password: document.getElementById("password").value
     }
     localStorage.setItem("formData", JSON.stringify(formData));
-    console.log(localStorage.getItem("formData"));
+    // console.log(localStorage.getItem("formData"));
     displayData()
     e.preventDefault()
+    window.location.href = "../products.html"
+    alert("you can now shop")
 }
 
 
@@ -27,7 +30,7 @@ function displayData() {
                   <td>Username:</td>
                   <td>${username}</td>
         </tr>
-       
+
         <tr>
                   <td>Email:</td>
                   <td>${email}</td>
@@ -36,16 +39,27 @@ function displayData() {
                   <td>Password:</td>
                   <td>${password}</td>
         </tr>
-    
+
         </tbody>
-    
+
         </table>
-    
+
         `;
     }
 
 }
 displayData()
+
+
+
+
+
+
+
+
+
+
+
 
 
 

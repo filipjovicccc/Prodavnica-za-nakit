@@ -1,4 +1,14 @@
+// import { test } from "./logIn-page/logIn.js";
 
+// console.log(test);
+
+
+// function onLoad() {
+//     alert("you need to login first");
+//     window.location.href = "./login-page/login.html"
+
+// }
+// onLoad();
 
 const closeCartB = document.querySelector(".close-cart");
 

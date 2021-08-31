@@ -75,10 +75,10 @@ a {
   justify-content: center;
 } 
 
-/* header {
+header {
   display: flex;
   flex-direction: column;
-} */
+}
 #tag {
   float: left;
   position: absolute;
@@ -127,10 +127,10 @@ a {
 
 }
 .section-title {
-  font-size: 3.4rem;
-  text-transform: uppercase;
+  font-size: 3.0rem;
+  /* text-transform: uppercase; */
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 .section-btn {
   padding: 1rem 3rem;
@@ -150,10 +150,10 @@ a {
 }
 
 
-.products {
+/* .products {
   padding: 4rem 0;
   
-}
+} */
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -164,12 +164,13 @@ a {
 .products-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+ max-width: 1170px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
   color: #222;
+  border-radius: 20px 20px 20px 20px;
  
 }
 .img-container {
@@ -177,11 +178,12 @@ a {
   overflow: hidden;
   max-width: 230px;
   max-height: 230px;
-  outline: rgba(0, 0, 0, 0.5) solid 10px;
+ outline: rgba(9, 7, 5, 0.877) solid 10px;
+  
 }
 .bag-btn {
   position: absolute;
-  top: 1200px;
+  top: 70%;
   right: 0;
   background: var(--primaryColor);
   border: none;
@@ -189,10 +191,10 @@ a {
   padding: 0.5rem 0.75rem;
   letter-spacing: var(--mainSpacing);
   font-weight: bold;
-  /* transition: var(--mainTransition);   /*ovde je tranzicija za add to cart */
-  /* transform: translateX(101%); */ 
+  transition: var(--mainTransition);   /*ovde je tranzicija za add to cart*/
+   transform: translateX(101%); 
   cursor: pointer;
-}
+} 
 .bag-btn:hover {
   color: var(--mainWhite);
 }

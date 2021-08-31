@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 body {
     
@@ -8,7 +13,7 @@ body {
 a {
     color: black;
     text-decoration: none;
-    text-align: center;
+    
 }
 .wrapper {
    
@@ -16,6 +21,9 @@ a {
 }
 h2 {
     margin-left: 50px;
+}
+h3 {
+    color: whitesmoke !important;
 }
 
 .form-group {
@@ -60,4 +68,29 @@ table tr td {
 table {
     margin-left: 50px;
     margin-top: 20px;
+}
+nav {
+    
+    display: flex;
+     align-items: center;
+     margin-bottom: 100px;
+    margin-top: 20px;
+    width: 100%;
+     height: 6em;
+    border: 2px solid black;
+    background-color: rgb(9, 7, 5)!important;
+    color: whitesmoke;
+
+    
+}
+.nav-center {
+    width: 100%;
+  /* max-width: 1170px; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1.5rem;
+  font-size: 0.9em;
+ 
 }

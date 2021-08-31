@@ -1,29 +1,41 @@
-body {
+ body {
     /* background-image: url(images/nakit4.jpg);
     background-color: #F0FFFF;
      background-repeat: no-repeat;
     background-size: cover;  */
-    background-color: #ffd6ba;
+    /* background-color: #ffd6ba; */
     
 
 }
 
 
-h3 {
-    text-align: center;
-    margin-right: 100px;
 
-}
 
 a { text-decoration: none;
-    color: black;
-
+    color: whitesmoke;
 }
+
+
+
 nav {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    width: 100%;
+    height: 5em;
+    border: 2px solid black;
+    background-color: rgb(9, 7, 5);
+    color: whitesmoke;
 }
+nav h3 {
+    text-align: center;
+    margin-right: 100px;
+    font-weight: 400;
+    color: whitesmoke;
+
+} 
 
 .cart-button {
     margin-left: 100px;
@@ -32,7 +44,7 @@ nav {
 /* .demo-wrap {
     overflow: hidden;
     position: relative;
-  } */
+  }
 
   .demo-bg {
     opacity: 0.6;
@@ -45,4 +57,4 @@ nav {
   
   .demo-content {
     position: relative;
-  }
+  } */
