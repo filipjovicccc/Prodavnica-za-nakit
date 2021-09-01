@@ -1,5 +1,51 @@
-// let test = 'import has worked';
-// export { test }
+
+
+document.getElementById("btn-test").addEventListener("click", function () {
+
+    let username = document.getElementById("username").value;
+
+    let email = document.getElementById("email").value;
+
+    let password = document.getElementById("password").value;
+
+    let nameRegex = /^[a-zA-Z0-9]*$/;
+
+    let emailRegex = /[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+/;
+
+    let passwordRegex = /"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/;
+
+
+
+
+
+
+
+    let nameTest = nameRegex.test(username);
+
+    if (nameTest) {
+        alert("ime je ispravno");
+    } else {
+        alert("ime je neispravno");
+
+    }
+    let emailTest = emailRegex.test(email);
+
+    if (emailTest) {
+        alert("email je ispravan");
+
+    } else {
+        alert("email je neispravan");
+    }
+    let passwordTest = passwordRegex.test(password)
+    if (passwordTest) {
+        alert("password je ispravan");
+    } else {
+        alert("password je neispravan");
+
+    }
+})
+
+
 
 
 const signUp = e => {
@@ -49,7 +95,6 @@ function displayData() {
 
 }
 displayData()
-
 
 
 
