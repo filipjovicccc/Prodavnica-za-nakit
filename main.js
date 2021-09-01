@@ -1,14 +1,3 @@
-// import { test } from "./logIn-page/logIn.js";
-
-// console.log(test);
-
-
-// function onLoad() {
-//     alert("you need to login first");
-//     window.location.href = "./login-page/login.html"
-
-// }
-// onLoad();
 
 const closeCartB = document.querySelector(".close-cart");
 
@@ -69,17 +58,13 @@ class Detskop {            //klasa koja ce prikazivati na stranici
                 <img src=${product.image
                 } alt="product" class="product-img">
                 <button class="bag-btn" data-id="${product.id}">
-            <i class="fas fa-shopping-cart"></i>
-            add to cart </button>
-          
-             
+                    <i class="fas fa-shopping-cart"></i>
+                    add to cart
+
+                </button>
             </div>
             <h3>${product.title}</h3>    
-            <h4>${product.price}</h4> 
-            
-
-        
-           
+            <h4>${product.price}</h4>  
         </article>
 
             `;
@@ -162,7 +147,7 @@ class Detskop {            //klasa koja ce prikazivati na stranici
             <i class="fas fa-sort-down" data-id=${item.id}></i>
         </div>`;
         cartContent.appendChild(div);
-
+        console.log(cartContent);
 
 
     };
@@ -329,5 +314,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 });
+
+
+
 
 

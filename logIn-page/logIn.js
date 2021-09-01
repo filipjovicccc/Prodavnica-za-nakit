@@ -1,72 +1,56 @@
 
 
-
-
 const btn = document.getElementById("btn-test")
 
+const validate = (value, rule, message) => rule.test(value) ? true : alert(message)
+const usernameValidation = () => {
 
-btn.addEventListener('click', function () {
+    const username = document.getElementById("username").value;
+    const usernameRegex = /^[a-zA-Z0-9]*$/;
+    const usernameMsg = "username is not written properly";
 
-    let username = document.getElementById("username").value;
-    let nameRegex = /^[a-zA-Z0-9]*$/;
-    let nameTest = nameRegex.test(username);
+    validate(username, usernameRegex, usernameMsg)
 
-    if (nameTest) {
-        // alert("ime je ispravno");
-    } else {
-        alert("username is not writen properly");
-       
-
-    }
-
-})
-
-btn.addEventListener('click', function () {
-    let email = document.getElementById("email").value;
-    let emailRegex = /[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+/;
-    let emailTest = emailRegex.test(email);
-
-    if (emailTest) {
-        // alert("the email is correct");
-    } else {
-
-        alert("email is not writen properly");
+}
 
 
-    }
+
+const emailValidation = () => {
+    const email = document.getElementById("email").value;
+    const emailRegex = /[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+/;
+    const emailMsg = "email is not written properly";
+
+    validate(email, emailRegex, emailMsg)
 
 
 
 }
 
-)
+const passwordValidation = () => {
 
+    const password = document.getElementById("password").value;
+    const passwordRegex = /^[A-Za-z0-9]\w{8,}$/;
+    const passwordMsg = "password is not written properly"
+    validate(password, passwordRegex, passwordMsg)
 
+}
 
-btn.addEventListener('click', function () {
-
-
-
-    let password = document.getElementById("password").value;
-    let passwordRegex = /"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/;
-    let passwordTest = passwordRegex.test(password)
-    if (passwordTest) {
-        // alert("password je ispravan");
-    } else {
-        alert("password is not written properly");
-
+function goAway() {
+    if (validate == true) {
+        window.location.href = "../products.html"
+        alert("you can now shop")
     }
 }
 
-)
 
+const inpustsValidation = () => {
+    usernameValidation()
+    emailValidation()
+    passwordValidation()
+    goAway()
 
-
-
-
-
-
-
+}
+btn.addEventListener("click", inpustsValidation)
 
 const signUp = e => {
 
@@ -80,8 +64,8 @@ const signUp = e => {
     // console.log(localStorage.getItem("formData"));
     displayData()
     e.preventDefault()
-    window.location.href = "../products.html"
-    // alert("you can now shop")
+
+
 }
 
 
