@@ -6,7 +6,7 @@
       },
       "fields": {
         "title": "New copper earrings",
-        "price": "$10.99",
+        "price": "10.99",
         "image": {
           "fields": {
             "file": {
@@ -22,7 +22,7 @@
       },
       "fields": {
         "title": "new creative earrings",
-        "price": "$12.99",
+        "price": "12.99",
         "image": {
           "fields": {
             "file": {
@@ -38,7 +38,7 @@
       },
       "fields": {
         "title": "hand made neckles",
-        "price": "$12.99",
+        "price": "12.99",
         "image": {
           "fields": {
             "file": {
@@ -54,7 +54,7 @@
       },
       "fields": {
         "title": "new original neckles",
-        "price": "$12.99",
+        "price": "12.99",
         "image": {
           "fields": {
             "file": {
@@ -70,7 +70,7 @@
       },
       "fields": {
         "title": "new rings",
-        "price": "$8.99",
+        "price": "8.99",
         "image": {
           "fields": {
             "file": {
@@ -86,7 +86,7 @@
       },
       "fields": {
         "title": "earings",
-        "price": "$7.99",
+        "price": "7.99",
         "image": {
           "fields": {
             "file": {
@@ -102,7 +102,7 @@
       },
       "fields": {
         "title": "earings",
-        "price": "$5.99",
+        "price": "5.99",
         "image": {
           "fields": {
             "file": {
@@ -118,7 +118,7 @@
       },
       "fields": {
         "title": "earings",
-        "price": "$8.99",
+        "price": "8.99",
         "image": {
           "fields": {
             "file": {

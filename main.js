@@ -53,18 +53,18 @@ class Detskop {            //klasa koja ce prikazivati na stranici
         let result = " ";
         products.forEach(product => {
             result += `
-            <article class="product">
+           <article class="product">
             <div class="img-container">
                 <img src=${product.image
                 } alt="product" class="product-img">
                 <button class="bag-btn" data-id="${product.id}">
-                    <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart"></i>
                     add to cart
 
                 </button>
             </div>
             <h3>${product.title}</h3>    
-            <h4>${product.price}</h4>  
+            <h4>${`$` + product.price}</h4>  
         </article>
 
             `;
@@ -133,11 +133,11 @@ class Detskop {            //klasa koja ce prikazivati na stranici
     addCartItem(item) {
         const div = document.createElement("div");
         div.classList.add("cart-item");
-        div.innerHTML = ` <img src=${item.image} alt="product"/>
+        div.innerHTML = ` <img src = ${item.image} alt = "product"/>
 
         <div>
             <h4>${item.title}</h4>
-            <h5>${item.price}</h5>
+            <h5>${`$` + item.price}</h5>
             <span class="remove-item" data-id=
             ${item.id}> remove</span>
         </div>
@@ -250,8 +250,8 @@ class Detskop {            //klasa koja ce prikazivati na stranici
         Storage.saveCart(cart);
         let button = this.getSingleButton(id);
         button.disabled = false;
-        button.innerHTML = `<i class="fas 
-        fa-shopping-cart"></i>add to cart`  //resetujemo dakle na addtoo cart
+        button.innerHTML = `<i class="fas fa-shopping-cart"></i>
+        add to cart`  //resetujemo dakle na addtoo cart
 
     }
     getSingleButton(id) {

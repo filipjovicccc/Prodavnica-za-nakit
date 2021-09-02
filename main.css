@@ -82,7 +82,7 @@ header {
 #tag {
   float: left;
   position: absolute;
-  height: 100%;
+  height: 50%;
   width: 250px;
   left: 200px;
   top: 0px;

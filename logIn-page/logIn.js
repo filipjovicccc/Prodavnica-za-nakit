@@ -35,19 +35,11 @@ const passwordValidation = () => {
 
 }
 
-function goAway() {
-    if (validate == true) {
-        window.location.href = "../products.html"
-        alert("you can now shop")
-    }
-}
-
-
 const inpustsValidation = () => {
     usernameValidation()
     emailValidation()
     passwordValidation()
-    goAway()
+    // goAway()
 
 }
 btn.addEventListener("click", inpustsValidation)
@@ -64,7 +56,6 @@ const signUp = e => {
     // console.log(localStorage.getItem("formData"));
     displayData()
     e.preventDefault()
-
 
 }
 
