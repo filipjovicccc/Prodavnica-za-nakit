@@ -3,6 +3,8 @@ const closeCartB = document.querySelector(".close-cart");
 
 const clearCartB = document.querySelector(".clear-cart");
 
+const purchaseCart = document.querySelector(".clear-cart");
+
 const cartDOM = document.querySelector(".cart");
 
 const cartB = document.querySelector(".cart-button");
@@ -225,24 +227,33 @@ class Detskop {            //klasa koja ce prikazivati na stranici
                 else {
                     cartContent.removeChild(lowerAmount.parentElement.parentElement);
                     this.removeItem(id)                //ako bude 0 da se skloni sa carta
-
                 }
-
             }
 
         })
     }
-    clearCart() {
-        let cartItems = cart.map(item => item.id);
-        cartItems.forEach(id => this.removeItem(id));
-        console.log(cartContent.children)
+    // clearCart() {
+    //     let cartItems = cart.map(item => item.id);
+    //     cartItems.forEach(id => this.removeItem(id));
+    //     console.log(cartContent.children)
 
-        while (cartContent.children.length > 0) {
-            cartContent.removeChild(cartContent.children[0]);
-        }
-        this.hideCart();
+    //     while (cartContent.children.length > 0) {
+    //         cartContent.removeChild(cartContent.children[0]);
+    //     }
+    //     this.hideCart();
 
-    }
+    // }
+    // purchaseCart() {
+    //     let cartItems = cart.map(item => item.id);
+    //     cartItems.forEach(id => this.removeItem(id));
+    //     console.log(cartContent.children)
+
+    //     while (cartContent.children.length > 0) {
+    //         cartContent.removeChild(cartContent.children[0]);
+    //     }
+    //     this.hideCart();
+
+    // }
 
     removeItem(id) {
         cart = cart.filter(item => item.id !== id);

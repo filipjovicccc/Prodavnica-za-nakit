@@ -1,51 +1,26 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="logIn.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>SIGNUP</title>
-
-
-
+    <title>SIGNIN</title>
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <div class="nav-center">
-            <a href="../home-page/home.html">
-                <h3>HOME</h3>
-            </a>
-            <a href="../contact-page/index.html">
-                <h3>CONTACT</h3>
-            </a>
-
-
-    </nav>
-    </div>
     <div class="wrapper">
-
-        <h2>SIGNUP</h2>
-        <form role="form" onsubmit="signUp(event);" aoutcomplete="off">
-            <div class=" form-group" class="col-xs-4">
+        <h2>SIGNIN</h2>
+        <form role="form" onsubmit="return false" autocomplete="off">
+            <div class="form-group" class="col-xs-4">
                 <label for="ex3">
-
                     <input type="text" name="Username" id="username" placeholder="Username" required>
                 </label>
-
             </div>
-            <!-- <div class="form-group" class="col-xs-4">
-                <label for="ex3">
-                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
-                </label>
-            </div>  -->
             <div class="form-group" class="col-xs-4">
                 <label for="ex3">
                     <input type="email" name="email" id="email" placeholder="E-mail" required>
@@ -58,16 +33,10 @@
                 </label>
             </div>
             <div class="form-group">
-                <button id="btn-test" type="submit">Sign Up</button>
+                <button class="signUp" id="btn-test" type="submit" onclick="onSignIn(event);">Sign In</button>
             </div>
         </form>
-        <p>Already a member? <a href="signin.html">Sign In</a></p>
-
-        <h2>Your info</h2>
-        <div id="output">
-
-
-        </div>
+        <p class="link">Don't have account? <a href="index.html">Sign Up</a></p>
     </div>
 
     <script src="logIn.js"></script>
