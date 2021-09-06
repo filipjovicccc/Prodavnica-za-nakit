@@ -3,6 +3,8 @@ const closeCartB = document.querySelector(".close-cart");
 
 const clearCartB = document.querySelector(".clear-cart");
 
+const purchaseButton = document.querySelector(".purchase-btn");
+
 const cartDOM = document.querySelector(".cart");
 
 const cartB = document.querySelector(".cart-button");
@@ -129,6 +131,10 @@ class Detskop {            //klasa koja ce prikazivati na stranici
 
         cartItems.innerText = itemsTotal;
 
+
+
+
+
     }
     addCartItem(item) {
         const div = document.createElement("div");
@@ -180,7 +186,14 @@ class Detskop {            //klasa koja ce prikazivati na stranici
     cartLogic() {
         clearCartB.addEventListener("click", () => {
             this.clearCart();
+
         });
+        purchaseButton.addEventListener("click", () => {
+            this.clearCart()
+            alert("Thank u for your purchase")
+        })
+
+
         cartContent.addEventListener("click", event => {
             if (event.target.classList.contains("remove-item")) {
 
@@ -207,6 +220,8 @@ class Detskop {            //klasa koja ce prikazivati na stranici
                 addAmount.nextElementSibling.innerText =
 
                     tempItem.amount;
+
+
 
             }
             else if (event.target.classList.contains("fa-sort-down")) {
@@ -241,6 +256,7 @@ class Detskop {            //klasa koja ce prikazivati na stranici
         this.hideCart();
 
     }
+
 
     removeItem(id) {
         cart = cart.filter(item => item.id !== id);

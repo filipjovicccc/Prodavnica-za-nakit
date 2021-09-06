@@ -37,7 +37,7 @@ a {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.781);
-  color: white !important;
+  color: white;
   z-index: 1;
 }
 .navbar-center {
@@ -87,6 +87,7 @@ header {
   height: 50%;
   width: 250px;
   left: 200px;
+  right: 400px;
   top: 0px;
   bottom: 200px;
   z-index: 1000;
@@ -117,7 +118,6 @@ header {
 #tag div {
   margin-top: 20px;
   margin-left: 20px;
-  /* border-bottom: 1px solid black; */
   line-height: 25px;
 }
 
@@ -127,14 +127,13 @@ header {
   background: rgba(255, 255, 255, 0.8);
    padding: 2rem;
   border-radius: 22px 22px 22px 22px;
-  /* position: relative; */
+ 
 
 }
 .section-title {
   font-size: 3.0rem;
-  /* text-transform: uppercase; */
-  letter-spacing: var(--mainSpacing);
-  /* margin-bottom: 3rem; */
+ letter-spacing: var(--mainSpacing);
+  
 }
 .section-btn {
   padding: 1rem 3rem;
@@ -154,10 +153,7 @@ header {
 }
 
 
-/* .products {
-  padding: 4rem 0;
-  
-} */
+
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -235,7 +231,6 @@ header {
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
-  /* color: var(--primaryColor); */
   text-align: center;
   font-size: 1.2em;
   display: flex;
@@ -279,6 +274,19 @@ header {
     width: 30vw;
     min-width: 450px;
   }
+  
+}
+
+@media screen and (max-width: 768px){
+ 
+#tag {
+  left: 0px;
+}
+
+#tag2{
+  left:550px;
+}
+ 
 }
 
 .close-cart {
@@ -328,6 +336,8 @@ header {
   margin-top: 2rem;
   letter-spacing: var(--mainSpacing);
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 .cart-footer h3 {
   text-transform: capitalize;
@@ -360,5 +370,7 @@ header {
   border-radius: 20px;
   align-items: center;
 }
+
+
 
 

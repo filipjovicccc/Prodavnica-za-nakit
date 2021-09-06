@@ -24,11 +24,12 @@ tagButton2.onclick = function () {
     }
 }
 
+
 function displayData() {
-    if (localStorage.getItem("formData")) {
-        let { username, email, password } = JSON.parse(localStorage.getItem("formData"));
-        console.log("json:", localStorage.getItem("formData"))
-        var output = document.getElementById("output");
+    if (sessionStorage.getItem("currentloggedin")) {
+        let { username, email, password } = JSON.parse(sessionStorage.getItem("currentloggedin"));
+        console.log("json:", sessionStorage.getItem("currentloggedin"))
+        let output = document.getElementById("output");
         output.innerHTML = `
             <p>NAME: <span>${username}</span></p>
             <p>Email: <span>${email}</span></p>
@@ -37,9 +38,7 @@ function displayData() {
     }
 }
 
-logout.addEventListener('click', () => localStorage.clear())
-
-
+logout.addEventListener('click', () => sessionStorage.clear())
 
 
 
